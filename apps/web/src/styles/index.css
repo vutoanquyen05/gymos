@@ -1,0 +1,92 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    font-family: 'Be Vietnam Pro', sans-serif;
+  }
+}
+
+/* Các class CSS tuân thủ phương pháp luận BEM theo AGENT_RULES A §6 */
+.gymos-layout {
+  display: flex;
+  min-height: 100vh;
+}
+
+.gymos-header {
+  height: 4rem;
+  border-bottom: 1px solid #E2E8F0;
+  background-color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1.5rem;
+}
+
+.gymos-sidebar {
+  width: 16rem;
+  border-right: 1px solid #E2E8F0;
+  background-color: #FFFFFF;
+  padding: 1.5rem 1rem;
+}
+
+.gymos-card {
+  background-color: #FFFFFF;
+  border: 1px solid #E2E8F0;
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.05);
+}
+
+.gymos-card__title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #0F172A;
+  margin-bottom: 0.5rem;
+}
+
+.gymos-card__badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.gymos-card__badge--success {
+  background-color: #ECFDF5;
+  color: #059669;
+}
+
+.gymos-card__badge--warning {
+  background-color: #FEF3C7;
+  color: #D97706;
+}
+
+.gymos-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  font-size: 0.875rem;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.gymos-btn--primary {
+  background-color: #F97316;
+  color: #FFFFFF;
+}
+
+.gymos-btn--primary:hover {
+  background-color: #EA580C;
+}
+
+.gymos-btn--disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
